@@ -16,17 +16,13 @@ nodejs 'NodeJS' // Name of the NodeJS installation
        steps{
              sh '''
                     sh 'node --version'
-                    sh 'npm install
-                    mkdir -p reports/junit
-                    npm test --ci --reporters=default --reporters=jest-junit
+                    sh 'npm install'
+                    
+                   
+                    npm test --ci --reporters=default
                 '''
        }
-       post {
-                always {
-                    // Publish JUnit test results
-                    junit 'reports/junit/*.xml'
-                }
-            }
+      
        
      }
 
