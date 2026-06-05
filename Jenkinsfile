@@ -2,7 +2,7 @@ pipeline{
   agent { label 'jenkins'}
 
   tools {
-nodejs 'NodeJS' // Name of the NodeJS installation
+nodejs 'NodeJS 26.3.0' // Name of the NodeJS installation
 }
 
    stages {
