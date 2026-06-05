@@ -15,7 +15,7 @@ nodejs 'NodeJS' // Name of the NodeJS installation
       stage ("Test"){
        steps{
              sh '''
-                    sh 'node --version'
+                    
                     sh 'npm install'
                     
                    
